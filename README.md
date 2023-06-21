@@ -12,6 +12,8 @@ Ao longo do desenvolvimento do projeto, pude aprimorar minhas habilidades em HTM
 
 Estou muito satisfeito com os resultados alcançados e com o aprendizado adquirido ao longo desse projeto. Acredito que a prática constante e o desejo de sempre melhorar são essenciais para o desenvolvimento como estudante e profissional.
 
-Espero que tenham gostado de conhecer um pouco sobre o meu projeto. Estou aberto a sugestões e feedbacks para continuar evoluindo e aprimorando minhas habilidades na área de desenvolvimento web. Obrigado a todos pela atenção!
+Espero que tenham gostado de conhecer um pouco sobre o meu projeto. Estou aberto a sugestões e feedbacks para continuar evoluindo e aprimorando minhas habilidades na área de desenvolvimento web. 
+
+Obrigado a todos pela atenção!
 
 
