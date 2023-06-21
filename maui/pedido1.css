@@ -1,4 +1,4 @@
-/* Global Styles */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -21,7 +21,7 @@ a {
   padding: 20px;
 }
 
-/* Header */
+
 header {
   padding: 20px;
   display: flex;
@@ -268,7 +268,7 @@ select {
   margin-right: 1500px; 
 }
 
-/* Footer*/
+
 
 footer {
   background-color: #673AB7;
