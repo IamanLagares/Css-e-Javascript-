@@ -1,0 +1,349 @@
+/* Estilos gerais */
+
+
+
+header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #000000;
+  background-image: linear-gradient(#5A2EA5, #9B70DB);
+}
+
+
+.logo img {
+  width: 150px;
+  height: auto;
+  border: none;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu-item {
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  transition: color 0.3s ease;
+}
+
+.menu-item a:hover {
+  color: #ffffff;
+}
+
+
+
+.ifood-container {
+  display: flex;
+  align-items: center;
+}
+
+.ifood-container img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  border: none;
+}
+
+
+  .image-section {
+    border-bottom:3px solid #673AB7;
+    margin: 0;
+    text-align: center;
+    padding: 25px;
+    background-image: url('img/açaifundo.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .image-section h2 {
+    font-family: "Cambria", sans-serif;
+  }
+  
+  .image-slider {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 10px;
+  }
+
+  .image-slider .slider-inner {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+  }
+
+
+  .image-slider img {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: top;
+    width: 500px; 
+    height: auto;
+    border: 3px solid #673AB7;
+  }
+
+  .prev-arrow,
+  .next-arrow {
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .prev-arrow {
+    margin-right: 20px;
+  }
+
+  .next-arrow {
+    margin-left: 20px;
+  }
+
+section {
+  background-color: #ffffff;
+  padding: 35px;
+ 
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+  
+}
+
+
+.about-image {
+  flex: 1;
+  text-align: right;
+
+}
+
+.about-text {
+  flex: 2;
+  color: #070606;
+  margin: 0;
+}
+
+.about-text h3 {
+  color: #000000;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin: 0;
+  
+}
+
+.about-text p {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  width: 500px; 
+  border-radius: 8px;
+  margin-bottom: 10px;
+  height: 350px; 
+  border: 3px solid #673AB7;
+}
+  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap%27');
+ 
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: #ffffff;
+
+}
+
+h1 {
+  margin: 0;
+}
+
+section {
+  margin: 0px;
+  border-bottom: 3px solid #673AB7;
+  
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  color: #8d5abd;
+}
+
+.grid-item {
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border: 3px solid #673AB7;
+  background-image: linear-gradient(#5A2EA5, #9B70DB);
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: 3px solid #000000;
+}
+
+
+.first-item-image {
+  width: 220px; 
+  height: 200px; 
+}
+.hover-effect {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.description {
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.order-button {
+  background-color: #673AB7;
+  color: #FFF;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+  background-color: #5A2EA5;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.location-section {
+  border: 1px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('img/açaipraiaedit.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 40px;
+  border-top:3px solid #673AB7;
+}
+
+.location-section h2 {
+  font-family: Arial, sans-serif;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.map-container {
+  width: 80%;
+  max-width: 600px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #111013;
+  border-radius: 5px;
+}
+
+.text-container {
+  text-align: justify;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 20px;
+
+  /*background-color: #8d5abd;*/ /*Nao usei preferi o degrade abaixo*/
+
+  background-image: linear-gradient(#5A2EA5, #9B70DB);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #673AB7;
+  border-radius: 10px;
+  padding: 20px;
+  color: #000000;
+}
+
+.text-container h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.text-container p {
+  margin-bottom: 10px;
+}
+
+.text-container ul {
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.text-container li {
+  margin-bottom: 5px;
+}
+
+footer {
+  background-color: #673AB7;
+  padding: 10px;
+  text-align: center;
+  color: #FFF;
+  border-top: 3px solid #111013;
+}

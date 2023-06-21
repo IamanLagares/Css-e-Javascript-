@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <script src="https://kit.fontawesome.com/SEU_CODIGO.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maui - Fazer Pedido</title>
+  <link rel="stylesheet" href="pedido1.css">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="img/açailha.webp" alt="Logo Maui - Açaí">
+    </div>
+    <nav>
+      <ul>
+        <li class="menu-item"><a href="index.html">Início</a></li>
+        <li class="menu-item"><a href="index.html">Cardápio</a></li>
+        <li class="menu-item"><a href="index.html">Localização</a></li>
+        
+          <div class="ifood-container">
+            <img src="img/peçaja.png" alt="iFood">
+            <a href="ifood" class="ifood-button"></a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2></h2>
+    <div class="pedido-container">
+      <div class="pedido-item">
+        <div class="scrollable-image">
+          <img src="img/açaitrad.jpg" alt="Açaí Tradicional">
+        </div>
+        <h3>Açaí Tradicional</h3>
+        <p class="description">Delicioso açaí tradicional servido com acompanhamentos.</p>
+        <p class="price">R$ 10,00</p>
+      </div>
+      <div class="pedido-item">
+        <div class="scrollable-image">
+          <img src="img/açaifrutas.jpg" alt="Outro Item">
+        </div>
+        <h3>Açai com frutas</h3>
+        <p class="description">Açaí refrescante com uma seleção de frutas frescas.</p>
+        <p class="price">R$ 12,00</p>
+      </div>  
+      <div class="pedido-item">
+        <div class="scrollable-image">
+          <img src="img/açaiespecial.jpg" alt="Outro Item">
+        </div>
+        <h3>Açai Especial</h3>
+        <p class="description">Açaí refrescante com uma seleção de frutas frescas.</p>
+        <p class="price">R$ 12,00</p>
+      </div>
+      <div class="pedido-item">
+        <div class="scrollable-image">
+          <img src="img/açai4.jpg" alt="Outro Item">
+        </div>
+        <h3>Açai Vegano</h3>
+        <p class="description">Açaí refrescante com uma seleção de frutas frescas.</p>
+        <p class="price">R$ 12,00</p>
+      </div>
+      <div class="pedido-item">
+        <div class="scrollable-image">
+          <img src="img/açai5.jfif" alt="Outro Item">
+        </div>
+        <h3>Açai com chocolate</h3>
+        <p class="description">Açaí refrescante com uma seleção de frutas frescas.</p>
+        <p class="price">R$ 12,00</p>
+      </div>
+      <div class="pedido-item">
+        <div class="scrollable-image">
+          <img src="img/shakeaçai.jpeg" alt="Outro Item">
+        </div>
+        <h3>Smootie de Açai</h3>
+        <p class="description">Açaí refrescante com uma seleção de frutas frescas.</p>
+        <p class="price">R$ 12,00</p>
+      </div>
+             
+    </div>
+
+    <div class="navigation-arrows">
+      <button class="prev-arrow"><i class="fas fa-chevron-left"></i></button>
+      <button class="next-arrow"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </section>
+
+
+  
+  <section class="table">
+    <h2 class="table-heading">Detalhes do Pedido</h2>
+    <form class="pedido-form">
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="pagamento">Forma de Pagamento:</label>
+        <select id="pagamento" name="pagamento" required>
+          <option value="">Selecione uma opção</option>
+          <option value="cartao">Cartão de Crédito</option>
+          <option value="dinheiro">Dinheiro</option>
+        </select>
+      </div>
+  
+      <button class="checkout-button">Finalizar Pedido</button>
+    </form>
+  </section>
+
+
+  
+  <script>
+    $(document).ready(function() {
+      var pedidoItems = $('.pedido-item');
+      var currentSlide = 0;
+  
+      
+      function showSlide(slideIndex) {
+        pedidoItems.hide(); 
+        pedidoItems.eq(slideIndex).show(); 
+      }
+  
+    
+      $('.prev-arrow').click(function() {
+        currentSlide = (currentSlide - 1 + pedidoItems.length) % pedidoItems.length;
+        showSlide(currentSlide);
+      });
+  
+     
+      $('.next-arrow').click(function() {
+        currentSlide = (currentSlide + 1) % pedidoItems.length;
+        showSlide(currentSlide);
+      });
+  
+      showSlide(currentSlide);
+    });
+  </script>
+ 
+  <script>
+     const form = document.querySelector('.pedido-form');
+       const mensagem = document.createElement('p');
+
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+            mensagem.textContent = 'Pedido finalizado com sucesso!';
+            mensagem.classList.add('mensagem-sucesso');
+              form.appendChild(mensagem);
+            });
+     </script>
+
+
+
+  <footer>
+    <p>&copy; 2023 Ilha - Açaí. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
